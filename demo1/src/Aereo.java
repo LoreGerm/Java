@@ -2,8 +2,7 @@ public class Aereo {
     private String codice = "";
     private String modello = "";
     private int km = 0;
-    private int postiTotali = 0;
-    private int postiRestanti = 0;
+    private Posto[] postiTotali = null;
 
 
     public String getCodice() {
@@ -30,19 +29,12 @@ public class Aereo {
         this.km = km;
     }
 
-    public int getPostiTotali() {
+
+    public Posto[] getPostiTotali() {
         return postiTotali;
     }
 
-    public void setPostiTotali(int postiTotali) {
+    public void setPostiTotali(Posto[] postiTotali) {
         this.postiTotali = postiTotali;
-    }
-
-    public int getPostiRestanti() {
-        return postiRestanti;
-    }
-
-    public void setPostiRestanti(int postiRestanti) {
-        this.postiRestanti = postiRestanti;
     }
 }
